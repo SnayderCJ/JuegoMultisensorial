@@ -1,0 +1,88 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.simulador-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* El "LED RGB" simulado */
+#led-rgb {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 1rem auto;
+    transition: background-color 0.1s;
+    border: 2px solid #555;
+}
+
+/* --- Clases de Colores para el LED --- */
+.led-apagado { background-color: #333; }
+.led-rojo { background-color: #FF0000; box-shadow: 0 0 20px #FF0000; }
+.led-verde { background-color: #00FF00; box-shadow: 0 0 20px #00FF00; }
+.led-azul { background-color: #0000FF; box-shadow: 0 0 20px #0000FF; }
+.led-amarillo { background-color: #FFFF00; box-shadow: 0 0 20px #FFFF00; }
+
+/* Contenedor de los botones del juego */
+.botones-juego {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+/* Estilo de cada botón */
+.boton-juego {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid rgba(0,0,0,0.5);
+    transition: transform 0.1s, opacity 0.1s;
+}
+
+.boton-juego:active {
+    transform: scale(0.95); /* Efecto de pulsación */
+}
+
+/* Colores de los botones */
+.rojo { background-color: #D9534F; }
+.amarillo { background-color: #F0AD4E; }
+.verde { background-color: #5CB85C; }
+.azul { background-color: #0275D8; }
+
+/* Estilo para cuando un botón está "apagado" (no es el turno del jugador) */
+.boton-juego.desactivado {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Controles de inicio y nivel */
+.controles {
+    margin-top: 1.5rem;
+}
+#boton-inicio {
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#boton-inicio:hover {
+    background-color: #025aa5;
+}

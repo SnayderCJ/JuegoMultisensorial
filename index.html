@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación: Juego Multisensorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Simulación de Juego Multisensorial</h1>
+    <p>Una réplica web del prototipo físico en Arduino.</p>
+
+    <div class="simulador-container">
+        <div id="led-rgb" class="led-apagado"></div>
+        
+        <div class="controles">
+            <p>Nivel Actual: <span id="nivel-actual">0</span></p>
+            <button id="boton-inicio">Iniciar Juego</button>
+        </div>
+
+        <div class="botones-juego">
+            <div id="boton-rojo" class="boton-juego rojo"></div>
+            <div id="boton-amarillo" class="boton-juego amarillo"></div>
+            <div id="boton-verde" class="boton-juego verde"></div>
+            <div id="boton-azul" class="boton-juego azul"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
