@@ -86,3 +86,25 @@ body {
 #boton-inicio:hover {
     background-color: #025aa5;
 }
+
+/* --- Media Query para Celulares --- */
+/* Esto se aplica solo si la pantalla es de 480px o más pequeña */
+
+@media (max-width: 480px) {
+    .simulador-container {
+        /* Reduce el padding en pantallas pequeñas */
+        padding: 1.5rem;
+    }
+
+    #led-rgb {
+        /* Hace el LED más pequeño */
+        width: 80px;
+        height: 80px;
+    }
+
+    .boton-juego {
+        /* Hace los botones más pequeños */
+        width: 100px;
+        height: 100px;
+    }
+}
